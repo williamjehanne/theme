@@ -20,92 +20,29 @@
 <link rel='stylesheet' id='prettyphoto-css'  href='/css/prettyPhoto.css' type='text/css' media='screen' />
 <link rel='stylesheet' id='js_composer_front-css'  href='/css/js_composer.css' type='text/css' media='all' />
 <link rel='stylesheet' id='bootstrap-css'  href='/css/lib/bootstrap.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='custom_animate-css'  href='http://startuplywp.com/demo/wp-content/themes/startuply/css/animate.css' type='text/css' media='all' />
-<link rel='stylesheet' id='custom_prettyphoto-css'  href='http://startuplywp.com/demo/wp-content/themes/startuply/css/lib/prettyPhoto.css' type='text/css' media='all' />
-<link rel='stylesheet' id='revolution-css'  href='http://startuplywp.com/demo/wp-content/themes/startuply/css/revolution-styles.css' type='text/css' media='all' />
-<link rel='stylesheet' id='startuply_custom-css'  href='http://startuplywp.com/demo/wp-content/themes/startuply/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='startuply_theme_option-css'  href='http://startuplywp.com/demo/wp-content/themes/startuply/cache/theme-option.css' type='text/css' media='all' />
+<link rel='stylesheet' id='custom_animate-css'  href='/css/animate.css' type='text/css' media='all' />
+<link rel='stylesheet' id='custom_prettyphoto-css'  href='/css/lib/prettyPhoto.css' type='text/css' media='all' />
+<link rel='stylesheet' id='revolution-css'  href='/css/revolution-styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='startuply_custom-css'  href='/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='startuply_theme_option-css'  href='/css/theme-option.css' type='text/css' media='all' />
 <link rel='stylesheet' id='startuply_ptsans-css'  href='http://fonts.googleapis.com/css' type='text/css' media='all' />
 <link rel='stylesheet' id='startuply_lato-css'  href='http://fonts.googleapis.com/css' type='text/css' media='all' />
-<link rel='stylesheet' id='startuply_fontawesome-css'  href='http://startuplywp.com/demo/wp-content/themes/startuply/fonts/FontAwesome/font-awesome.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='startuply_lineicons-css'  href='http://startuplywp.com/demo/wp-content/themes/startuply/fonts/LineIcons/font-lineicons.css' type='text/css' media='all' />
-<link rel='stylesheet' id='vsc-animation-style-css'  href='http://startuplywp.com/demo/wp-content/themes/startuply/engine/extend/animations/css/vivaco-animations.css' type='text/css' media='all' />
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-includes/js/jquery/jquery.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel='stylesheet' id='startuply_fontawesome-css'  href='/fonts/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='startuply_lineicons-css'  href='/fonts/font-lineicons2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='vsc-animation-style-css'  href='/css/vivaco-animations.css' type='text/css' media='all' />
+<script type='text/javascript' src='/js/jquery.js'></script>
+<script type='text/javascript' src='/js/jquery-migrate.min.js'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var edd_scripts = {"ajaxurl":"http:\/\/startuplywp.com\/demo\/wp-admin\/admin-ajax.php","position_in_cart":"","already_in_cart_message":"You have already added this item to your cart","empty_cart_message":"Your cart is empty","loading":"Loading","select_option":"Please select an option","ajax_loader":"\/demo\/wp-content\/plugins\/easy-digital-downloads\/assets\/images\/loading.gif","is_checkout":"0","default_gateway":"paypal","redirect_to_checkout":"1","checkout_page":"http:\/\/startuplywp.com\/demo\/easy-digital-downloads\/checkout\/","permalinks":"1","quantities_enabled":""};
     /* ]]> */
 </script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/plugins/easy-digital-downloads/assets/js/edd-ajax.min.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/themes/startuply/engine/extend/animations/js/vivaco-animations.js'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://startuplywp.com/demo/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://startuplywp.com/demo/wp-includes/wlwmanifest.xml" />
+<script type='text/javascript' src='/js/edd-ajax.min.js'></script>
+<script type='text/javascript' src='/js/vivaco-animations.js'></script>
 <meta name="generator" content="WordPress 4.1.6" />
-<link rel='canonical' href='http://startuplywp.com/demo/' />
-<link rel='shortlink' href='http://startuplywp.com/demo/' />
-<meta name="generator" content="Easy Digital Downloads v2.3.9" />
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        // CUSTOM AJAX CONTENT LOADING FUNCTION
-        var ajaxRevslider = function(obj) {
+<link rel='canonical' href='http://gigaupload.com/' />
+<link rel='shortlink' href='http://gigaupload.com/' />
 
-            // obj.type : Post Type
-            // obj.id : ID of Content to Load
-            // obj.aspectratio : The Aspect Ratio of the Container / Media
-            // obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
-
-            var content = "";
-
-            data = {};
-
-            data.action = 'revslider_ajax_call_front';
-            data.client_action = 'get_slider_html';
-            data.token = 'f9a75dfb1b';
-            data.type = obj.type;
-            data.id = obj.id;
-            data.aspectratio = obj.aspectratio;
-
-            // SYNC AJAX REQUEST
-            jQuery.ajax({
-                type:"post",
-                url:"http://startuplywp.com/demo/wp-admin/admin-ajax.php",
-                dataType: 'json',
-                data:data,
-                async:false,
-                success: function(ret, textStatus, XMLHttpRequest) {
-                    if(ret.success == true)
-                        content = ret.data;
-                },
-                error: function(e) {
-                    console.log(e);
-                }
-            });
-
-            // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
-            return content;
-        };
-
-        // CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
-        var ajaxRemoveRevslider = function(obj) {
-            return jQuery(obj.selector+" .rev_slider").revkill();
-        };
-
-        // EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
-        var extendessential = setInterval(function() {
-            if (jQuery.fn.tpessential != undefined) {
-                clearInterval(extendessential);
-                if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
-                    jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});
-                    // type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
-                    // func: the Function Name which is Called once the Item with the Post Type has been clicked
-                    // killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
-                    // openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
-                }
-            }
-        },30);
-    });
-</script>
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://startuplywp.com/demo/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]--><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1429535941154{padding-top: 150px !important;}.vc_custom_1424792112101{padding-top: 35px !important;padding-bottom: 35px !important;}.vc_custom_1424378068484{padding-top: 50px !important;}.vc_custom_1423845105581{padding-top: 15px !important;}.vc_custom_1427199365504{padding-top: 10px !important;padding-bottom: 25px !important;}.vc_custom_1423845168912{padding-top: 110px !important;padding-bottom: 35px !important;}.vc_custom_1424792145739{padding-top: 50px !important;padding-bottom: 30px !important;}.vc_custom_1435785411858{padding-top: 100px !important;}.vc_custom_1435785521444{padding-top: 70px !important;}.vc_custom_1423845269495{padding-top: 75px !important;padding-bottom: 100px !important;}.vc_custom_1427892651576{padding-top: 50px !important;}.vc_custom_1423845293496{padding-top: 50px !important;}.vc_custom_1423845310879{padding-top: 50px !important;padding-bottom: 100px !important;}.vc_custom_1424792162256{padding-top: 5px !important;padding-bottom: 10px !important;}.vc_custom_1435835840608{padding-right: 35px !important;padding-left: 35px !important;}.vc_custom_1429533656107{padding-top: 20px !important;}.vc_custom_1429533701919{padding-top: 10px !important;}.vc_custom_1428413570438{padding-top: 50px !important;}.vc_custom_1428413822933{padding-top: 85px !important;}.vc_custom_1428413838927{padding-top: 85px !important;}.vc_custom_1429534238931{padding-right: 100px !important;padding-left: 100px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
@@ -1370,35 +1307,35 @@
     var vsc_parallax_uI9R1 = {"id":"mqb"};
     /* ]]> */
 </script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/themes/startuply/js/custom-parallax.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/themes/startuply/js/lib/jquery.isotope.min.js'></script>
+<script type='text/javascript' src='/js/custom-parallax.js'></script>
+<script type='text/javascript' src='/js/jquery.isotope.min.js'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var vals = [];
     var vsc_grid_FE215 = {"id":"qmz","gutter_width":"","vals":{"grid_manager":1,"grid_phone":1,"grid_tablet":2,"grid_small":"3","grid_wide":"3","grid_very_wide":"3","grid_normal":"3","grid_gutter_width":0}};
     /* ]]> */
 </script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/themes/startuply/js/custom-isotope-portfolio.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/themes/startuply/js/lib/headhesive.min.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.js'></script>
+<script type='text/javascript' src='/js/custom-isotope-portfolio.js'></script>
+<script type='text/javascript' src='/js/headhesive.min.js'></script>
+<script type='text/javascript' src='/js/jquery.prettyPhoto.js'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var themeOptions = {"stickyMenu":"all_pages","menuPosition":"600","stickyMenuLogo":"http:\/\/startuplywp.com\/demo\/wp-content\/themes\/startuply\/images\/logo-inverted.png","stickyMenuLogoRetina":"http:\/\/startuplywp.com\/demo\/wp-content\/themes\/startuply\/images\/logo-retina-inverted.png","mobileMainMenuMod":"","0":"","mobileMenuMod":"","smoothScroll":"","smoothScrollSpeed":"800","1":""};
     /* ]]> */
 </script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/themes/startuply/js/custom.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/plugins/js_composer/assets/js/js_composer_front.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-includes/js/jquery/ui/core.min.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-includes/js/jquery/ui/widget.min.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-includes/js/jquery/ui/tabs.min.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/plugins/js_composer/assets/lib/bower/jquery-ui-tabs-rotate/jquery-ui-tabs-rotate.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/themes/startuply/js/lib/jquery.bxslider.min.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/themes/startuply/js/custom-content-slider.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/plugins/js_composer/assets/lib/bower/flexslider/jquery.flexslider-min.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/themes/startuply/js/lib/ProgressCircle.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/themes/startuply/js/custom-pie.js'></script>
-<script type='text/javascript' src='http://startuplywp.com/demo/wp-content/themes/startuply/js/custom-counter.js'></script>
+<script type='text/javascript' src='/js/custom.js'></script>
+<script type='text/javascript' src='/js/js_composer_front.js'></script>
+<script type='text/javascript' src='/js/waypoints.min.js'></script>
+<script type='text/javascript' src='/js/core.min.js'></script>
+<script type='text/javascript' src='/js/widget.min.js'></script>
+<script type='text/javascript' src='/js/tabs.min.js'></script>
+<script type='text/javascript' src='/js/jquery-ui-tabs-rotate.js'></script>
+<script type='text/javascript' src='/js/jquery.bxslider.min.js'></script>
+<script type='text/javascript' src='/js/custom-content-slider.js'></script>
+<script type='text/javascript' src='/js/jquery.flexslider-min.js'></script>
+<script type='text/javascript' src='/js/ProgressCircle.js'></script>
+<script type='text/javascript' src='/js/custom-pie.js'></script>
+<script type='text/javascript' src='/js/custom-counter.js'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var ga = {"ga_id":""};

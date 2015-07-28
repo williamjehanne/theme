@@ -1,0 +1,30 @@
+ @media (max-width: 1024px) {
+}
+.navigation-header.inner-menu:not(.fixmenu-clone) { background-image: url("http://startuplywp.com/demo/wp-content/themes/startuply/images/low_poly_background.jpg"); background-position: top center; background-repeat: no-repeat; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover; background-size: cover; background-attachment: fixed; }
+@media (max-width: 1024px) {
+.navigation-header.inner-menu:not(.fixmenu-clone) { background-image: url("http://startuplywp.com/demo/wp-content/themes/startuply/images/low_poly_background.jpg"); background-position: top center; background-repeat: no-repeat; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover; background-size: cover; background-attachment: fixed; }
+}
+@media (max-width: 1024px) {
+}
+
+			.fixmenu-clone.navigation-header .navigation-bar > .menu-item.dropdown:not(.featured) > a:after, .navigation-header .navigation-bar > .menu-item.dropdown:not(.featured) > a:after { background-color: rgba(37,37,37,1); }
+			.fixmenu-clone.navigation-header .dropdown:hover .dropdown-toggle, .navigation-header .dropdown:hover .dropdown-toggle { position: relative; z-index: 9999; }
+			.fixmenu-clone.navigation-header .dropdown-menu, .navigation-header .dropdown-menu { background: rgba(37,37,37,1); }
+			.fixmenu-clone.navigation-header .dropdown-menu > .menu-item.dropdown:hover:before, .navigation-header .dropdown-menu > .menu-item.dropdown:hover:before { background-color: #000; }
+
+			body.mobile-always .navbar-collapse { background-color: rgba(37,37,37,1); }
+			body.mobile-always .navigation-header .navigation-bar > .menu-item.dropdown.opened > .dropdown-toggle { background-color: rgba(37,37,37,0.3); }
+			body.mobile-always .navigation-header .navigation-bar .dropdown-menu .menu-item > a, body.mobile-always .navigation-header .navigation-bar .dropdown-menu .menu-item > a:hover, body.mobile-always .navigation-header .navigation-bar .dropdown-menu .menu-item.current > a { background-color: rgba(0,0,0,0.5); }
+			body.mobile-always .fixmenu-clone.navigation-header .dropdown-menu .dropdown-menu, body.mobile-always .navigation-header .dropdown-menu .dropdown-menu { background-color: #000; }
+
+			@media (max-width: 1024px) {
+				.navbar-collapse { background-color: rgba(37,37,37,1); }
+				.navigation-header .navigation-bar > .menu-item.dropdown.opened > .dropdown-toggle { background-color: rgba(37,37,37,0.3); }
+				.navigation-header .navigation-bar .dropdown-menu .menu-item > a, .navigation-header .navigation-bar .dropdown-menu .menu-item > a:hover, .navigation-header .navigation-bar .dropdown-menu .menu-item.current > a { background-color: rgba(0,0,0,0.5); }
+				.fixmenu-clone.navigation-header .dropdown-menu .dropdown-menu, .navigation-header .dropdown-menu .dropdown-menu { background-color: #000; }
+			}
+#footer { background-position: center center !important; }
+#footer { background-repeat: no-repeat !important; }
+#footer { background-size: auto !important; }
+#menu-item-3237 > a:after { content:url('http://startuplywp.com/demo/wp-content/themes/startuply/images/new-badge.jpg'); margin:8px 0px 0px 8px; vertical-align: middle; }
+#menu-item-3255 > a:after { content:url('http://startuplywp.com/demo/wp-content/themes/startuply/images/new-badge.jpg'); margin:8px 0px 0px 8px; vertical-align: middle; }
